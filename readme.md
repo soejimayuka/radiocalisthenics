@@ -2,6 +2,8 @@
 
 ## DEMO
 
+https://soejimayuka.github.io/radiocalisthenics/
+
 ## 紹介と使い方
 
 - 夏休みのラジオ体操カードを作りました
