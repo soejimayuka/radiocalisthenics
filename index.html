@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/app.js" defer=""></script>
+
+    <title>ラジオ体操カード</title>
+  </head>
+  <body>
+    <!-- モーダルエリアここから -->
+    <section id="modalArea" class="modalArea">
+      <div id="modalBg" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <div class="l-input__wrapper">
+            <div class="l-input__area">
+              <div>
+                <p class="p-input__title">今日の結果を登録しよう！</p>
+                <p class="p-input__txt">今日は何日？</p>
+                <select class="l-input__box" name="example">
+                  <option>選んでね</option>
+                  <option value="7月20日">7月20日（木曜日）</option>
+                  <option value="7月21日">7月21日（金曜日）</option>
+                  <option value="7月24日">7月24日（月曜日）</option>
+                  <option value="7月25日">7月25日（火曜日）</option>
+                  <option value="7月26日">7月26日（水曜日）</option>
+                  <option value="7月27日">7月27日（木曜日）</option>
+                  <option value="7月28日">7月28日（金曜日）</option>
+                  <option value="7月31日">7月31日（月曜日）</option>
+                  <option value="8月1日">8月1日（火曜日）</option>
+                  <option value="8月2日">8月2日（水曜日）</option>
+                  <option value="8月3日">8月3日（木曜日）</option>
+                  <option value="8月4日">8月4日（金曜日）</option>
+                  <option value="8月7日">8月7日（月曜日）</option>
+                  <option value="8月8日">8月8日（火曜日）</option>
+                  <option value="8月9日">8月9日（水曜日）</option>
+                  <option value="8月10日">8月10日（木曜日）</option>
+                  <option value="8月11日">8月11日（金曜日）</option>
+                </select>
+              </div>
+
+              <p class="p-input__txt">今日はラジオ体操に行った？</p>
+              <select class="l-input__box" name="donot" 　id="donot">
+                <option>選んでね</option>
+                <option value="出席した">ちゃんと行ったよ</option>
+                <option value="欠席した">今日はお休みした</option>
+                <option value="雨だった">雨でなかったよ</option>
+              </select>
+            </div>
+            <div class="p-input__btnWrapper">
+              <button type="button" id="save" class="c-button -hozon p-input__btn">登録</button>
+            </div>
+          </div>
+        </div>
+        <div id="closeModal" class="closeModal">閉じる</div>
+      </div>
+    </section>
+    <div class="l-wrapper l-spLayout">
+      <div class="l-spLayout__second">
+        <img src="img/bg_icon.png" alt="" />
+      </div>
+      <div id="js-certificate" class="l-certificate">
+        <div class="p-certificate">
+          <a href="next/index.html"><img src="img/certificate.png" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- 新規登録ボタン -->
+      <div>
+        <div class="l-shinkbtn">
+          <div id="openModal" class="c-button -touroku l-toroku">
+            <img class="illust_Kuma" src="img/kuma01.png" alt="くま" />
+            <p class="btn_torokuTxt">今日の登録</p>
+          </div>
+        </div>
+        <div id="clear" class="btn_sakuzyo c-button -sakuzyo"><p>データを消す</p></div>
+      </div>
+      <div class="l-box -box0">
+        <div class="p-box -bi">
+          <div id="js-sakuzyo0" class="p-box__content">
+            <span class="-text0">7/20</span>
+            <span class="-illust0"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box1">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text1">7/21</span>
+            <span class="-illust1"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box2">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text2">7/24</span>
+            <span class="-illust2"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box3">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text3">7/25</span>
+            <span class="-illust3"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box4">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text4">7/26</span>
+            <span class="-illust4"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box5">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text5">7/27</span>
+            <span class="-illust5"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box6">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text6">7/28</span>
+            <span class="-illust6"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box7">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text7">7/31</span>
+            <span class="-illust7"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box8">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text8">8/1</span>
+            <span class="-illust8"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box9">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text9">8/2</span>
+            <span class="-illust9"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box10">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text10">8/3</span>
+            <span class="-illust10"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box11">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text11">8/4</span>
+            <span class="-illust11"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box12">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text12">8/7</span>
+            <span class="-illust12"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box13">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text13">8/8</span>
+            <span class="-illust13"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box14">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text14">8/9</span>
+            <span class="-illust14"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box15">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text15">8/10</span>
+            <span class="-illust15"></span>
+          </div>
+        </div>
+      </div>
+      <div class="l-box -box16">
+        <div class="p-box -bi">
+          <div class="p-box__content">
+            <span class="-text16">8/11</span>
+            <span class="-illust16"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
